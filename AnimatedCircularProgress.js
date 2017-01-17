@@ -35,13 +35,6 @@ export default class AnimatedCircularProgress extends Component {
       }
     ).start();
   }
-  
-  performLinearAnimation(toValue, duration) {
-    Animated.timing(this.state.chartFillAnimation, {
-      toValue: toValue,
-      duration: duration
-    }).start();
-  }
 
   render() {
     const { fill, prefill, ...other } = this.props;
